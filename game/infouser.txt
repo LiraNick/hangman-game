@@ -1,0 +1,3 @@
+{'nome':'Marcos', 'qPartidas':12, 'vitorias':58.3, 'derrotas':41.7}
+{'nome':'Ana', 'qPartidas':5, 'vitorias':20.0, 'derrotas':80.0}
+{'nome':'Joao', 'qPartidas':9, 'vitorias':11.1, 'derrotas':88.9}
