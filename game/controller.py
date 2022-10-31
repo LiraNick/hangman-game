@@ -1,5 +1,4 @@
 
-
 def cadastroPessoa(player):
     """ Função criada para cadastrar o jogador no txt
     Args:
@@ -103,3 +102,4 @@ Percentual de Vitórias: {temp['pVitorias']}%
 Percentual de Derrotas: {temp['pDerrotas']}%\n''')
             
         {'nome': 'Joao', 'qPartidas': 10, 'vitorias': 1, 'derrotas': 9, 'pVitorias': 10.0, 'pDerrotas': 90.0}    
+
