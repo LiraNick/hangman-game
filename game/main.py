@@ -1,6 +1,5 @@
-from controller import atualizar
-#estatisticas
+from controller import atualizar, estatisticas
 
-atualizar('Marcos', False)
+#atualizar('Marcos', True)
                 
-        
+#estatisticas()

@@ -16,3 +16,6 @@ depois de remover e salvar o txt, colocar o dicionário com as infomações atua
 """
 
 
+a = {'nome': 'Joao', 'qPartidas': 10, 'vitorias': 1, 'derrotas': 9, 'pVitorias': 10.0, 'pDerrotas': 90.0}
+
+
