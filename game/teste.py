@@ -1,21 +1,63 @@
 """
-{'nome':'Marcos', 'qPartidas':12, 'vitorias':58.3, 'derrotas':41.7}
-{'nome':'Ana', 'qPartidas':5, 'vitorias':20.0, 'derrotas':80.0}
-{'nome':'Joao', 'qPartidas':9, 'vitorias':11.1, 'derrotas':88.9}
+Função que irá fazer a seleção da “palavra” para o jogo.
+Irá buscar no arquivo TXT com base ao nível de dificuldade
+**obs: foi trocado o nome do da função (antigo= sorteioNome())
 """
 
-#pVitorias = quantidade de acertos / quantidade total de partidas * 100
-
-#p = QA / TP * 100
-
-"""
-função atualizar
-se o player possuir histórico: preciso pegar as informações antigas, colocar em um dicionário, 
-salvar o txt SEM as informações novas e antigas. 
-depois de remover e salvar o txt, colocar o dicionário com as infomações atualizadas
-"""
-
-
-a = {'nome': 'Joao', 'qPartidas': 10, 'vitorias': 1, 'derrotas': 9, 'pVitorias': 10.0, 'pDerrotas': 90.0}
-
-
+lista = ['''
+     _________
+     |/      |
+     |      (_)
+     |      \|/
+     |       |
+     |      / \\
+     |
+    _|_''',
+    '''
+     _________
+     |/      |
+     |      (_)
+     |      \|/
+     |       |
+     |      / 
+     |
+    _|_''',
+    '''
+     _________
+     |/      |
+     |      (_)
+     |      \|/
+     |       |
+     |      
+     |
+    _|_''',
+    '''
+     _________
+     |/      |
+     |      (_)
+     |      \|/
+     |       
+     |      
+     |
+    _|_''',
+        '''
+     _________
+     |/      |
+     |      (_)
+     |     
+     |       
+     |      
+     |
+    _|_''',
+        '''
+     _________
+     |/   _____                         ____                 
+     |   / ____|                       / __ \                
+     |  | |  __  __ _ _ __ ___   ___  | |  | |_   _____ _ __ 
+     |  | | |_ |/ _` | '_ ` _ \ / _ \ | |  | \ \ / / _ \ '__|
+     |  | |__| | (_| | | | | | |  __/ | |__| |\ V /  __/ |   
+     |   \_____|\__,_|_| |_| |_|\___|  \____/  \_/ \___|_|   
+    _|_''']
+    
+for c in lista:
+    print(c)

@@ -1,3 +1,38 @@
+from random import randint
+
+def sorteioPalavras():
+    """ Função criada para sorteio de palavras (hard/easy)
+    Returns:
+        String: Retorna a palavra referente ao nível selecionado
+    """
+    
+    print('Escolha o nível de dificuldade:')
+    nivel = str(input('[Easy/Hard]: ')).lower().strip()     # seleção de nível
+    
+    while nivel not in 'easyhard' :     # validação
+        print('Opção incorreta!')
+        print('Escolha o nível de dificuldade:')
+        nivel = str(input('[Easy/Hard]: ')).lower().strip()     # seleção de nível
+
+
+    if nivel == 'easy':     # nível easy
+        
+        with open('easy.txt', 'r') as easy:   # abre o TXT (leitura)
+            palavras = easy.readlines()    # cada linha será uma str
+            
+        sorteio = randint(0, len(palavras))
+        
+        return palavras[sorteio]
+
+    else:           # nível hard
+        
+        with open('hard.txt', 'r') as easy:   # abre o TXT (leitura)
+            palavras = easy.readlines()    # cada linha será uma str
+            
+        sorteio = randint(0, len(palavras))
+        
+        return palavras[sorteio]
+    
 
 def cadastroPessoa(player):
     """ Função criada para cadastrar o jogador no txt
@@ -103,4 +138,3 @@ Percentual de Derrotas: {temp['pDerrotas']}%\n''')
             
         {'nome': 'Joao', 'qPartidas': 10, 'vitorias': 1, 'derrotas': 9, 'pVitorias': 10.0, 'pDerrotas': 90.0}    
 
-#eeryt
