@@ -254,7 +254,7 @@ def atualizar(nome, resultado):
             player['pDerrotas'] = 100   # 100% de derrotas
         
         cadastroPessoa(player)   # Função que adiciona o player no txt
-
+        
 
 def estatisticas():
     """ Função criada para mostrar as estatisticas e infomrações dos
