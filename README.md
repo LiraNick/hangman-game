@@ -19,7 +19,7 @@ git clone https://github.com/LiraNick/hangman-game.git
 ## 📦 Implantação
 Rodando pelo terminal python use o comando python + arquivo:
 ```
-python exemplo.py
+python main.py
 ```
 
 ## 🛠️ Construído com
@@ -39,7 +39,9 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 * **Alejandro Silveira Ramos** - * Auxílio no código - Repositório* - [desenvolvedor](https://github.com/alejandrosilveiraramos/)
 * **Marcos Silveira** - * Auxílio no código - Repositório* - [desenvolvedor](https://github.com/MQSilveira)
 
+##❌ Erro
 
+* em caso de erro abrir e rodar o arquivo de dentro da pasta ./app
 
 ## 📄 Licença
 
