@@ -3,35 +3,35 @@ from os import system
 
 
 def sorteioPalavras():
-    """ Função criada para sorteio de palavras (hard/easy)
+    """ Função criada para sorteio de palavras (dificil/facil)
     Returns:
         List: Retorna a palavra referente ao nível selecionado
         dentro de uma lista, onde cada "letra" está em um indice
     """
     
     print('Escolha o nível de dificuldade:')
-    nivel = str(input('[Easy/Hard]: ')).lower().strip()     # Seleção de nível
+    nivel = str(input('[facil/dificil]: ')).lower().strip()     # Seleção de nível
     
     # VALIDAÇÃO
-    while nivel not in 'easyhard' :
+    while nivel not in 'facildificil' :
         print('Opção incorreta!')
         print('Escolha o nível de dificuldade:')
-        nivel = str(input('[Easy/Hard]: ')).lower().strip()     # Seleção de nível
+        nivel = str(input('[facil/dificil]: ')).lower().strip()     # Seleção de nível
 
 
-    if nivel == 'easy':     # Nível easy
+    if nivel == 'facil':     # Nível facil
         
-        with open('easy.txt', 'r') as easy:     # Abre o TXT (leitura)
-            palavras = easy.readlines()         # Cada linha será uma str
+        with open('./db/facil.txt', 'r') as facil:     # Abre o TXT (leitura)
+            palavras = facil.readlines()         # Cada linha será uma str
             
         sorteio = randint(0, len(palavras))     # Sorteio de um número (de 0 a len de palavras)
         
         return list(palavras[sorteio].strip())  # Retorna uma palavra do txt no indice de sorteio
 
-    else:           # Nível hard
+    else:           # Nível dificil
         
-        with open('hard.txt', 'r') as easy:     # Abre o TXT (leitura)
-            palavras = easy.readlines()         # Cada linha será uma str
+        with open('./db/dificil.txt', 'r') as dificil:     # Abre o TXT (leitura)
+            palavras = dificil.readlines()         # Cada linha será uma str
             
         sorteio = randint(0, len(palavras))     # Sorteio de um número (de 0 a len de palavras)
         
@@ -174,7 +174,7 @@ def cadastroPessoa(player):
         player (Dict): Dicionário contendo as informações do jogador
     """
     
-    with open('infouser.txt', 'a') as arquivo:  # Abre o txt
+    with open('./db/infoUsuario.txt', 'a') as arquivo:  # Abre o txt
         arquivo.write(str(player)+"\n")     # Adiciona o dicionário ao txt
 
 
@@ -187,12 +187,12 @@ def atualizar(nome, resultado):
     
     posicao = index = 0        # Variável criada para validação do código
     flag = False
-    infouser = open('infouser.txt', 'r')   # abre o TXT (leitura)
+    infoUsuario = open('./db/infoUsuario.txt', 'r')   # abre o TXT (leitura)
     player = {'nome':nome}      # Cria o dicionário e atribui o nome do Jogador
     
     
     # VALIDAÇÃO DO PLAYER NO TXT 
-    for linha in infouser:                  # Pra cada player de infouser
+    for linha in infoUsuario:                  # Pra cada player de infoUsuario
         if nome == eval(linha)['nome']:     # Se nome for igual ao dicionário linha na posção nome
             player = eval(linha)            # Encontra o player e coloca em um dicionário para alteração futura
             posicao = index     # Variável para validação futura
@@ -201,17 +201,17 @@ def atualizar(nome, resultado):
         else :              # Se não, irá atribuir +1 a variável index
             index += 1
             
-    infouser.close()        # Fecha o arquivo
+    infoUsuario.close()        # Fecha o arquivo
     
     
     # "PEGAR" AS INFORMAÇÕES DO PLAYER
     if flag :       # Se o player já possuir um histórico, Flag será True
         
-        with open('infouser.txt', 'r') as ler:  # Abre o TXT (leitura)
+        with open('./db/infoUsuario.txt', 'r') as ler:  # Abre o TXT (leitura)
             linhas = ler.readlines()            # Cada linha será uma str
             index = 0                           # Altera o valor de index
             
-            with open('infouser.txt', 'w') as escrever:     # Abre o TXT (escrever no arquivo)
+            with open('./db/infoUsuario.txt', 'w') as escrever:     # Abre o TXT (escrever no arquivo)
                 for item in linhas:                         # Loop para percorrer linha por linha
                     if posicao != index:                    # Se posição do loop for diferente da posição do player
                         escrever.write(item)                # Escreva linha[c] no txt
@@ -265,10 +265,10 @@ def estatisticas():
     system('cls')       # "Limpa" a tela
     print('HISTÓRICO DE JOGADORES'.center(30))      # Topo
     
-    infouser = open('infouser.txt', 'r')            # Abre o TXT (leitura)
+    infoUsuario = open('./db/infoUsuario.txt', 'r')            # Abre o TXT (leitura)
     
     
-    for player in infouser:     # Loop para acessar cada linha que estava no txt
+    for player in infoUsuario:     # Loop para acessar cada linha que estava no txt
         temp = eval(player)     # Variável temporária para auxiliar na impressão
                                 # eval() transforma em um objeto
         

@@ -4,3 +4,4 @@
 {'nome': 'Eduarda', 'qPartidas': 1, 'vitorias': 0, 'derrotas': 1, 'pVitorias': 0, 'pDerrotas': 100}
 {'nome': 'Haiko', 'qPartidas': 3, 'vitorias': 1, 'derrotas': 2, 'pVitorias': 33.3, 'pDerrotas': 66.7}
 {'nome': 'Joao Victor', 'qPartidas': 1, 'vitorias': 0, 'derrotas': 1, 'pVitorias': 0, 'pDerrotas': 100}
+{'nome': 'Alejandro', 'qPartidas': 3, 'vitorias': 1, 'derrotas': 2, 'pVitorias': 33.3, 'pDerrotas': 66.7}
