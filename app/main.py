@@ -4,13 +4,13 @@ from os import system
 
 def menu():
     """
-    Função principal contendo o menu do jogo
+    Função principal contendo o menu do jogo com interação ao usuario
     """
     
     while True:                     # Loop do jogo
         system('cls')               # "Limpa" a tela
         
-        print('JOGO DA FORÇA'.center(25, ' '))      # Topo
+        print('JOGO DA FORCA'.center(25, ' '))      # Topo
         
         # MENU
         print('Escolha uma das opções:')
