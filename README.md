@@ -3,7 +3,7 @@ projeoto em grupo - +DEVS2BLU
 
 ### 📋 Pré-requisitos
 
-python
+Python 3.11. 0
 
 > https://www.python.org/downloads/
 
