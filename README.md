@@ -47,7 +47,7 @@ FileNotFoundError: [Errno] no such file or directory.
 
 ##✔️ Correção
 
->abrir e rodar na pasta .app/
+abrir e rodar na pasta .app/
 
 ## 📄 Licença
 
