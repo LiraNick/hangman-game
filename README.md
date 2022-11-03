@@ -3,7 +3,7 @@ projeoto em grupo - +DEVS2BLU
 
 ### 📋 Pré-requisitos
 
-python
+Python 3.11. 0
 
 > https://www.python.org/downloads/
 
@@ -39,9 +39,15 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 * **Alejandro Silveira Ramos** - * Auxílio no código - Repositório* - [desenvolvedor](https://github.com/alejandrosilveiraramos/)
 * **Marcos Silveira** - * Auxílio no código - Repositório* - [desenvolvedor](https://github.com/MQSilveira)
 
-##❌ Erro
+## ❌ Erro
 
-* em caso de erro abrir e rodar o arquivo de dentro da pasta ./app
+```
+FileNotFoundError: [Errno] no such file or directory.
+```
+
+## ✔️ Correção
+
+abrir e rodar na pasta .app/
 
 ## 📄 Licença
 
