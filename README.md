@@ -41,9 +41,9 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 ##❌ Erro
 
-'''
+```
 FileNotFoundError: [Errno] no such file or directory.
-'''
+```
 
 ##✔️ Correção
 
