@@ -25,12 +25,12 @@ def menu():
             
             atualizar(nome, resultado)      # Função que atualiza o histórico do jogador
             
-            enter = input('Precione ENTER para sair ')      # Enter para trocar de "tela"
+            enter = input('Precione ENTER para voltar ao Menu ')      # Enter para trocar de "tela"
 
 
         elif opcao == 2:    # ESTATISTICAS
             estatisticas()          # Função que mostra as estatisticas do jogo e jogadores
-            enter = input('Precione ENTER para sair ')      # Enter para trocar de "tela"
+            enter = input('Precione ENTER para voltar ao Menu ')      # Enter para trocar de "tela"
         
         
         elif opcao == 3:    # SAIR
