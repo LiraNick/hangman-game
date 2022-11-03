@@ -35,8 +35,8 @@ Ferramentas utilizadas
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 
-* **Nicolas Lira** - *Organização de equipe - Auxílio na pesquisa - Repositório* - [desenvolvedor](https://github.com/LiraNick)
-* **Alejandro Silveira Ramos** - *Organização de equipe - Auxílio no código - Repositório* - [desenvolvedor](https://github.com/alejandrosilveiraramos/)
+* **Nicolas Lira** - * Organização de equipe - Auxílio na pesquisa - Repositório* - [desenvolvedor](https://github.com/LiraNick)
+* **Alejandro Silveira Ramos** - * Auxílio no código - Repositório* - [desenvolvedor](https://github.com/alejandrosilveiraramos/)
 * **Marcos Silveira** - * Auxílio no código - Repositório* - [desenvolvedor](https://github.com/MQSilveira)
 
 
