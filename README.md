@@ -41,7 +41,13 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 ##❌ Erro
 
-* em caso de erro abrir e rodar o arquivo de dentro da pasta ./app
+'''
+FileNotFoundError: [Errno] no such file or directory.
+'''
+
+##✔️ Correção
+
+>abrir e rodar na pasta .app/
 
 ## 📄 Licença
 
