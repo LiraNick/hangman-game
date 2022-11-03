@@ -39,13 +39,13 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 * **Alejandro Silveira Ramos** - * Auxílio no código - Repositório* - [desenvolvedor](https://github.com/alejandrosilveiraramos/)
 * **Marcos Silveira** - * Auxílio no código - Repositório* - [desenvolvedor](https://github.com/MQSilveira)
 
-##❌ Erro
+## ❌ Erro
 
 ```
 FileNotFoundError: [Errno] no such file or directory.
 ```
 
-##✔️ Correção
+## ✔️ Correção
 
 abrir e rodar na pasta .app/
 
